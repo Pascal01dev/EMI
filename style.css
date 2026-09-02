@@ -1,6 +1,6 @@
 :root{
-    --primary-color:rgb(23, 134, 238);
-    --dark-color:rgb(15, 16, 19);
+    --primary-color:#72edd4;
+    --dark-color:#070c21;
     --light-color:white;
 }
 
@@ -168,10 +168,12 @@ section{
 }
 
 #about{
+    width:100%;
     display: flex;
     gap: 50px;
-    padding: 50px 0;
-    /* background-color:red; */
+    padding: 50px 5%;
+    background-color:var(--dark-color);
+    color:var(--light-color)
 }
 
 .about-card-1{
@@ -214,9 +216,42 @@ section{
 }
 
 .value{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
     padding:10px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+.value i{
+    font-size: 2em;
+    color: var(--primary-color);
+}
+
+#service{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+    padding: 50px 5%;
+    background-color:var(--dark-color);
+    color:var(--light-color)
+}
+
+#service h2{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+#service p{
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 
