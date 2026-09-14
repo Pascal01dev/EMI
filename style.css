@@ -20,6 +20,8 @@ header{
     display: grid;
     place-items: center;
     padding: 10px 0;
+    position: sticky;
+    top: 0;
     background-color: var(--dark-color);
 }
 
@@ -126,7 +128,7 @@ section{
 }
 
 .hero1 p{
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 1.5em;
     margin-bottom: 20px;
 }
@@ -161,6 +163,7 @@ section{
     width:40%;
 }
 
+
 .hero2 img{
     width:100%;
     border-radius: 8px;                                                             
@@ -189,7 +192,7 @@ section{
     width:50%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
 }
 
 .about-card-2 span{
@@ -231,12 +234,42 @@ section{
     color: var(--primary-color);
 }
 
+.accuracy{
+    width:100%;
+    display: flex;
+    gap: 20px;
+}
+
+.accuracy .accuracy-desc{
+    width:50%;
+}
+
+.accuracy .accuracy-count{
+    width:50%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 0 0 5px var(--primary-color);
+    /* background-color: red; */
+}
+
+.accuracy-count .unit{
+    font-size: 3em;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 60px;
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
 #service{
     width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:5px;
+    gap:20px;
     padding: 50px 5%;
     background-color:var(--dark-color);
     color:var(--light-color)
@@ -248,11 +281,154 @@ section{
     color: var(--primary-color);
 }
 
-#service p{
+#service .desc{
     font-size: 1.2em;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
+}
+
+.services{
+    width:85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    box-shadow: 0 0 5px var(--primary-color);
+    border-radius: 8px;
+    padding: 10px;
+    /* background-color: red; */
+}
+
+.service1{
+    grid-column: span 2;
+}
+
+.view-more{
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--primary-color);
+
 }
 
 
 
+
+.services i{
+    color:var(--primary-color);
+    font-size: 2em;
+}
+
+.services p{
+    font-size: 1em;
+}
+
+.service1 p{
+    font-size: 0.5em;
+}
+
+.services span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.services p{
+    text-align: left;
+}
+
+
+#view-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color:red; */
+}
+
+/* CONTACT SESSION */
+#contact{
+    width: 100%;
+    padding: 50px 5%;
+    display: flex;
+    gap: 50px;
+    background-color: var(--dark-color);
+}
+
+.form-container{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--light-color);
+}
+
+.form-container form{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    /* background-color: red; */
+}
+
+form .inputs{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+
+}
+
+.inputs input, select{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background: none;
+    font-size: 1em;
+    color: var(--primary-color);
+    outline: none;
+}
+
+form textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    outline: none;
+    resize: none;
+    font-size: 1em;
+}
+
+form button{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.map-container{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--light-color);
+}
+
+footer{
+    width: 100vw;
+    padding: 50px 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}

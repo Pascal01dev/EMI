@@ -1,0 +1,36 @@
+@media screen and (max-width:768px){
+    :root{
+        --primary-color:#72edd4;
+        --dark-color:#070c21;
+        --light-color:white;
+    }
+
+    header{
+    display:none;
+    }
+
+    #hero{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+   .hero1{
+        width:100%;
+    }
+
+    .hero2{
+        width:100%;
+    }
+
+    #about{
+        flex-direction: column-reverse;
+    }
+
+    .about-card-1{
+        width:100%;
+    }
+
+    .about-card-2{
+        width:100%;
+    }
+}

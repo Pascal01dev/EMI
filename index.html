@@ -6,24 +6,25 @@
     <title>EMIt</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <header>
         <div class="head">
             <div class="header-logo">
-            <img src="Images/Logo.png" alt="Logo">
-            <h1>EMI</h1>
-        </div>
+                <img src="Images/Logo.png" alt="Logo">
+                <h1>EMI</h1>
+            </div>
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Contacat</a>
-        </nav>
-        <div class="header-btn">
-            <a href="#">Book Appointment</a>
-        </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Contacat</a>
+            </nav>
+            <div class="header-btn">
+                <a href="#">Book Appointment</a>
+            </div>
         </div>
     </header>
 
@@ -79,6 +80,18 @@
                             <p>Delivering rapid, secure diagnostic reports to your doctor so your treatment never gets delayed.</p>
                         </div>
                     </div>
+
+                    <div class="accuracy">
+                        <div class="accuracy-desc">
+                            <span>Our Commitment to Quality</span>
+                            <p>At EraM Medical Imaging, we adhere to high standards of diagnostic accuracy and clinical excellence. Our state-of-the-art facility is equiped with the latest imaging technology, operated by highly trained professionals.</p>
+                        </div>
+
+                        <div class="accuracy-count">
+                            <span class="unit">99.9%</span>
+                            <p>Diagnostic Accuracy Rate</p>
+                        </div>
+                    </div>
                 </div>
         </section>
 
@@ -86,18 +99,92 @@
             <h1>Our Services</h1>
             <p>We offer a wide range of medical imaging services to help diagnose and treat various conditions.</p>
             <div class="services">
-                <div class="service"></div>
-                <div class="service"></div>
-                <div class="service"></div>
-                <div class="service"></div>
-                <div class="service"></div>
-                <div class="service"></div>
+                <div class="service service1">
+                    <i class="fa-solid fa-person-pregnant"></i>
+                    <span>Maternal & Fetal Care</span>
+                    <p class="desc">Routine obstetric scans, Fetal Doppler (BPP), and Biophysical Profile (BPP) Scoring.</p>
+                </div>
+
+                <div class="service">
+                    <i class="fa-solid fa-stomach"></i>
+                    <span>Abdomen & Pelvis</span>
+                    <p>Routine general assessments, trauma eFAST scans, and chest ultrasounds.</p>
+                </div>
+                
+                <div class="service">
+                    <i class="fa-solid fa-bone"></i>
+                    <span>Musculoskeletal (MSK)</span>
+                    <p>Targeted imaging for the knee, shoulder, wrist, elbow, and ankle joints.</p>
+                </div>
+                
+                <div class="service">
+                    <i class="fa-solid fa-woman"></i>
+                    <span>Gynaecological Scans</span>
+                    <p>Detailed gynaecological assessments, early pregnancy checks, and Transvaginal Scans (TVS).</p>
+                </div>
+                
+                <a href="" class="service view-more">
+                    <div id="view-all">
+                        <i class="fa-solid fa-eye"></i>
+                        <span>View all Services</span>
+                    </div>
+                </a>
             </div>
         </section>
-        <section></section>
+
+        <section id="contact">
+            <div class="form-container">
+                <h2>Request for Service</h2>
+                <form action="">
+                    <div class="inputs">
+                        <input type="text" placeholder="Patient's Name" required>
+                        <input type="text" placeholder="Contact">
+                    </div>
+
+                    <div class="inputs">
+                        <input type="text" placeholder="Emergency Contact" required>
+                        <select name="" id="" required>
+                            <option value="">Select Service</option>
+                            <option value="">Select Service</option>
+                            <option value="">Select Service</option>
+                            <option value="">Select Service</option>
+                        </select>
+                    </div>
+
+                    <textarea name="" id="" placeholder="Type Description...."></textarea>
+                    <button>Submit Request</button>
+                </form>
+            </div>
+
+            <div class="map-container">
+                <h2>Live Location</h2>
+                <img src="Images/Hero-bg1.jpeg" alt="map">
+            </div>
+
+        </section>
         <section></section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div>
+            <div class="header-logo">
+                <img src="Images/Logo.png" alt="Logo">
+                <h1>EMI</h1>
+            </div>
+
+            <p>&copy;2026 EraM Medical Imaging, Precision in Every Image</p>
+        </div>
+
+        <div>
+            <h1>Services</h1>
+        </div>
+
+        <div>
+            <h1>Navigations</h1>
+        </div>
+        <div>
+            <h1>Contacts</h1>
+        </div>
+    </footer>
 </body>
 </html>
