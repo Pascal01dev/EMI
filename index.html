@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMIt</title>
+    <title>EraM Medical Imaging</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" type="image/x-png" href="/Images/Logo.png">
 </head>
 <body>
-    <header>
+    <!-- Desktop Header -->
+    <header class="desktop-header">
         <div class="head">
             <div class="header-logo">
                 <img src="Images/Logo.png" alt="Logo">
@@ -17,13 +19,37 @@
             </div>
 
             <nav>
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Services</a>
-                <a href="#">Contacat</a>
+                <a href="#hero">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#service">Services</a>
+                <a href="#contact">Contact</a>
             </nav>
             <div class="header-btn">
-                <a href="#">Book Appointment</a>
+                <a href="#contact">Book Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Separate Responsive Header for Small Screens -->
+    <header class="mobile-header">
+        <div class="mobile-head">
+            <div class="header-logo">
+                <img src="Images/Logo.png" alt="Logo">
+                <h1>EMI</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="mobile-nav-drawer" id="mobileNav">
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#service">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-btn">
+                <a href="#contact">Book Appointment</a>
             </div>
         </div>
     </header>
@@ -35,78 +61,78 @@
                 <h2>Clarity Through <br> <span>Precision Imaging</span></h2>
                 <p>Advanced radiology solutions delivering rapid, accurate results. Experience state-of-the-art diagnostic care in a modern, patient-focused environment.</p>
                 <div class="btns">
-                    <a href="#" class="pri-btn">Book Appointment</a>
-                    <a href="#" class="sec-btn">View Services</a>
+                    <a href="#contact" class="pri-btn">Book Appointment</a>
+                    <a href="#service" class="sec-btn">View Services</a>
                 </div>
             </div>
 
             <div class="hero2">
-                <img src="Images/Ultrasound.jpeg" alt="img">
+                <img src="Images/Ultrasound.jpeg" alt="Ultrasound Imaging">
             </div>
         </section>
 
         <section id="about">
-                <div class="about-card-1">
-                    <img src="Images/abt.jpeg" alt="imaging">
-                </div>
+            <div class="about-card-1">
+                <img src="Images/abt.jpeg" alt="imaging">
+            </div>
 
-                <div class="about-card-2">
-                    <span>About Us</span>
-                    <p>At EraM Medical Imaging, we bridge the gap between advanced technology and compassionate healthcare. Our clinic is equipped with state of the art diagnostic tools designed to give your doctors clear, reliable answers.</p>
-                    <span>Core Values</span>
+            <div class="about-card-2">
+                <span>About Us</span>
+                <p>At EraM Medical Imaging, we bridge the gap between advanced technology and compassionate healthcare. Our clinic is equipped with state of the art diagnostic tools designed to give your doctors clear, reliable answers.</p>
+                <span>Core Values</span>
 
-                    <div class="core-values">
-                        <div class="value">
-                            <i class="fa-solid fa-crosshairs"></i>
-                            <h3>Clinicaal Precision</h3>
-                            <p>Using advanced technology and expert radiologists to deliver clear, dependable results for your doctor.</p>
-                        </div>
-
-                        <div class="value">
-                            <i class="fa-solid fa-hand-holding-hand"></i>
-                            <h3>Patient Comfort</h3>
-                            <p>Providing a warm, stress-free environment where your peace of mind is our priority.</p>
-                        </div>
-
-                        <div class="value">
-                            <i class="fa-solid fa-house-medical-circle-check"></i>
-                            <h3>Safety and Excellence</h3>
-                            <p>Following advanced safety protocols to keep radiation doses low while ensuring high-quality images.</p>
-                        </div>
-
-                        <div class="value">
-                            <i class="fa-solid fa-gauge"></i>
-                            <h3>Speed and Reliability</h3>
-                            <p>Delivering rapid, secure diagnostic reports to your doctor so your treatment never gets delayed.</p>
-                        </div>
+                <div class="core-values">
+                    <div class="value">
+                        <i class="fa-solid fa-crosshairs"></i>
+                        <h3>Clinical Precision</h3>
+                        <p>Using advanced technology and expert radiologists to deliver clear, dependable results for your doctor.</p>
                     </div>
 
-                    <div class="accuracy">
-                        <div class="accuracy-desc">
-                            <span>Our Commitment to Quality</span>
-                            <p>At EraM Medical Imaging, we adhere to high standards of diagnostic accuracy and clinical excellence. Our state-of-the-art facility is equiped with the latest imaging technology, operated by highly trained professionals.</p>
-                        </div>
+                    <div class="value">
+                        <i class="fa-solid fa-hand-holding-hand"></i>
+                        <h3>Patient Comfort</h3>
+                        <p>Providing a warm, stress-free environment where your peace of mind is our priority.</p>
+                    </div>
 
-                        <div class="accuracy-count">
-                            <span class="unit">99.9%</span>
-                            <p>Diagnostic Accuracy Rate</p>
-                        </div>
+                    <div class="value">
+                        <i class="fa-solid fa-house-medical-circle-check"></i>
+                        <h3>Safety and Excellence</h3>
+                        <p>Following advanced safety protocols to keep radiation doses low while ensuring high-quality images.</p>
+                    </div>
+
+                    <div class="value">
+                        <i class="fa-solid fa-gauge"></i>
+                        <h3>Speed and Reliability</h3>
+                        <p>Delivering rapid, secure diagnostic reports to your doctor so your treatment never gets delayed.</p>
                     </div>
                 </div>
+
+                <div class="accuracy">
+                    <div class="accuracy-desc">
+                        <span>Our Commitment to Quality</span>
+                        <p>At EraM Medical Imaging, we adhere to high standards of diagnostic accuracy and clinical excellence. Our state-of-the-art facility is equipped with the latest imaging technology, operated by highly trained professionals.</p>
+                    </div>
+
+                    <div class="accuracy-count">
+                        <span class="unit">99.9%</span>
+                        <p>Diagnostic Accuracy Rate</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="service">
-            <h1>Our Services</h1>
-            <p>We offer a wide range of medical imaging services to help diagnose and treat various conditions.</p>
+            <h2>Our Services</h2>
+            <p class="desc">We offer a wide range of medical imaging services to help diagnose and treat various conditions.</p>
             <div class="services">
                 <div class="service service1">
                     <i class="fa-solid fa-person-pregnant"></i>
                     <span>Maternal & Fetal Care</span>
-                    <p class="desc">Routine obstetric scans, Fetal Doppler (BPP), and Biophysical Profile (BPP) Scoring.</p>
+                    <p>Routine obstetric scans, Fetal Doppler (BPP), and Biophysical Profile Scoring.</p>
                 </div>
 
                 <div class="service">
-                    <i class="fa-solid fa-stomach"></i>
+                    <i class="fa-solid fa-user-doctor"></i>
                     <span>Abdomen & Pelvis</span>
                     <p>Routine general assessments, trauma eFAST scans, and chest ultrasounds.</p>
                 </div>
@@ -118,12 +144,12 @@
                 </div>
                 
                 <div class="service">
-                    <i class="fa-solid fa-woman"></i>
+                    <i class="fa-solid fa-venus"></i>
                     <span>Gynaecological Scans</span>
                     <p>Detailed gynaecological assessments, early pregnancy checks, and Transvaginal Scans (TVS).</p>
                 </div>
                 
-                <a href="" class="service view-more">
+                <a href="#" class="service view-more">
                     <div id="view-all">
                         <i class="fa-solid fa-eye"></i>
                         <span>View all Services</span>
@@ -132,59 +158,96 @@
             </div>
         </section>
 
+        <!-- New Section Added: Testimonials -->
+        <section id="testimonials">
+            <h2>What Our Patients Say</h2>
+            <p class="desc">Read real feedback from people who experienced our professional care.</p>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>"The environment was extremely welcoming, and the scan was fast and painless. Highly recommended!"</p>
+                    <h4>Sarah M.</h4>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>"My doctor received the report within hours. The staff is professional and the facility is ultra-modern."</p>
+                    <h4>David K.</h4>
+                </div>
+            </div>
+        </section>
+
         <section id="contact">
             <div class="form-container">
                 <h2>Request for Service</h2>
-                <form action="">
+                <form action="#">
                     <div class="inputs">
                         <input type="text" placeholder="Patient's Name" required>
-                        <input type="text" placeholder="Contact">
+                        <input type="text" placeholder="Contact" required>
                     </div>
 
                     <div class="inputs">
                         <input type="text" placeholder="Emergency Contact" required>
-                        <select name="" id="" required>
+                        <select required>
                             <option value="">Select Service</option>
-                            <option value="">Select Service</option>
-                            <option value="">Select Service</option>
-                            <option value="">Select Service</option>
+                            <option value="maternal">Maternal & Fetal Care</option>
+                            <option value="abdomen">Abdomen & Pelvis</option>
+                            <option value="msk">Musculoskeletal (MSK)</option>
+                            <option value="gynae">Gynaecological Scans</option>
                         </select>
                     </div>
 
-                    <textarea name="" id="" placeholder="Type Description...."></textarea>
-                    <button>Submit Request</button>
+                    <textarea placeholder="Type Description...."></textarea>
+                    <button type="submit">Submit Request</button>
                 </form>
             </div>
 
             <div class="map-container">
                 <h2>Live Location</h2>
-                <img src="Images/Hero-bg1.jpeg" alt="map">
+                <div class="map-frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31911.876441245047!2d34.304885374128425!3d1.1713603314428294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1778bb33e029d741%3A0x3bab0511f12aed09!2sBudadiri%20Town%20Council!5e0!3m2!1sen!2sug!4v1789486257485!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
             </div>
-
         </section>
-        <section></section>
     </main>
 
     <footer>
-        <div>
+        <div class="footer-col">
             <div class="header-logo">
                 <img src="Images/Logo.png" alt="Logo">
                 <h1>EMI</h1>
             </div>
-
-            <p>&copy;2026 EraM Medical Imaging, Precision in Every Image</p>
+            <p>Precision in Every Image, delivering rapid and reliable diagnostics.</p>
+            <p class="copyright">&copy; 2026 EraM Medical Imaging. All rights reserved.</p>
         </div>
 
-        <div>
-            <h1>Services</h1>
+        <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#service">Maternal & Fetal Care</a></li>
+                <li><a href="#service">Abdomen & Pelvis</a></li>
+                <li><a href="#service">Musculoskeletal</a></li>
+                <li><a href="#service">Gynaecological Scans</a></li>
+            </ul>
         </div>
 
-        <div>
-            <h1>Navigations</h1>
+        <div class="footer-col">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div>
-            <h1>Contacts</h1>
+
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Kampala, Uganda</p>
+            <p><i class="fa-solid fa-phone"></i> +256 000 000 000</p>
+            <p><i class="fa-solid fa-envelope"></i> info@eramimaging.com</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

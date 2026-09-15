@@ -1,36 +1,182 @@
-@media screen and (max-width:768px){
-    :root{
-        --primary-color:#72edd4;
-        --dark-color:#070c21;
-        --light-color:white;
+/* Media Queries for Full Responsiveness */
+
+/* Tablet & Smaller Screens (max-width: 992px) */
+@media screen and (max-width: 992px) {
+    /* Switch Headers */
+    header.desktop-header {
+        display: none;
+    }
+    header.mobile-header {
+        display: block;
+        width: 100vw;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: var(--dark-color);
+        border-bottom: 1px solid rgba(114, 237, 212, 0.1);
     }
 
-    header{
-    display:none;
+    .mobile-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 5%;
+        color: var(--primary-color);
     }
 
-    #hero{
+    #menu-toggle {
+        background: none;
+        border: none;
+        color: var(--primary-color);
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .mobile-nav-drawer {
+        display: none;
         flex-direction: column;
-        gap: 50px;
+        gap: 20px;
+        padding: 20px 5% 30px 5%;
+        background-color: var(--dark-color);
+        border-bottom: 1px solid rgba(114, 237, 212, 0.15);
     }
 
-   .hero1{
-        width:100%;
+    .mobile-nav-drawer.active {
+        display: flex;
     }
 
-    .hero2{
-        width:100%;
+    .mobile-nav-drawer nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 
-    #about{
-        flex-direction: column-reverse;
+    .mobile-nav-drawer nav a {
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 500;
+        color: var(--primary-color);
     }
 
-    .about-card-1{
-        width:100%;
+    .mobile-nav-drawer .header-btn {
+        margin-top: 5px;
     }
 
-    .about-card-2{
-        width:100%;
+    .mobile-nav-drawer .header-btn a {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        background-color: var(--primary-color);
+        padding: 10px;
+        border-radius: 8px;
+        color: var(--dark-color);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    /* Hero Section */
+    #hero {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .hero1, .hero2 {
+        width: 100%;
+    }
+
+    .hero1 .btns {
+        justify-content: center;
+    }
+
+    /* About Section */
+    #about {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+
+    .about-card-1, .about-card-2 {
+        width: 100%;
+    }
+
+    /* Services Section */
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service1 {
+        grid-column: span 2;
+    }
+
+    /* Testimonials */
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact Section */
+    #contact {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+
+    .form-container, .map-container {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Mobile Phones (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .hero1 h2 {
+        font-size: 2.3em;
+    }
+
+    .core-values {
+        grid-template-columns: 1fr;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .service1 {
+        grid-column: span 1;
+    }
+
+    .accuracy {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .accuracy .accuracy-desc, .accuracy .accuracy-count {
+        width: 100%;
+    }
+
+    form .inputs {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .inputs input, select {
+        width: 100%;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-col {
+        align-items: center;
+    }
+
+    .footer-col ul {
+        align-items: center;
     }
 }
