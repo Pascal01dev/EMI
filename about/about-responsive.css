@@ -1,0 +1,33 @@
+@media screen and (max-width: 992px) {
+
+  .about-hero-section,
+  .legacy-section {
+    flex-direction: column;
+  }
+  .about-hero-text,
+  .about-hero-img,
+  .legacy-text {
+    width: 100%;
+    max-width: 100%;
+  }
+  .legacy-stats {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .infra-grid,
+  .ai-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+  .partners-row {
+    flex-direction: column;
+  }
+}

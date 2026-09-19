@@ -1,0 +1,240 @@
+:root {
+  --primary-color: #72edd4;
+  --dark-color: #050917;
+  --darker-color: #030614;
+  --light-color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  overflow-x: hidden;
+}
+
+main {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+section {
+  width: 90%;
+  margin: 40px 0;
+}
+h2 {
+  font-size: 2.2em;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+p {
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+.badge-active {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.7em;
+  font-weight: 700;
+}
+
+/* About Layout */
+.about-hero-section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.about-hero-text {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-hero-img {
+  width: 45%;
+}
+.about-hero-img img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(114, 237, 212, 0.2);
+}
+
+.mission-cards-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 10px;
+}
+.m-card {
+  background: rgba(114, 237, 212, 0.02);
+  border: 1px solid rgba(114, 237, 212, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.m-card i {
+  color: var(--primary-color);
+  font-size: 1.5em;
+}
+.m-card h4 {
+  color: var(--light-color);
+  font-size: 1.05em;
+}
+
+.legacy-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  background: rgba(114, 237, 212, 0.02);
+  border: 1px solid rgba(114, 237, 212, 0.15);
+  padding: 50px;
+  border-radius: 12px;
+}
+.legacy-text {
+  max-width: 65%;
+}
+.legacy-stats {
+  display: flex;
+  gap: 30px;
+}
+.stat-box {
+  text-align: center;
+}
+.stat-box h3 {
+  font-size: 2.5em;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+.stat-box p {
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.leader-card {
+  background: rgba(114, 237, 212, 0.02);
+  border: 1px solid rgba(114, 237, 212, 0.15);
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.leader-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(114, 237, 212, 0.1);
+  display: grid;
+  place-items: center;
+  color: var(--primary-color);
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+.leader-card h4 {
+  color: var(--light-color);
+  font-size: 1.05em;
+}
+.leader-card .role {
+  color: var(--primary-color);
+  font-size: 0.85em;
+  font-weight: 600;
+}
+.leader-card .spec {
+  font-size: 0.8em;
+}
+
+.infra-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.infra-card {
+  background: rgba(114, 237, 212, 0.02);
+  border: 1px solid rgba(114, 237, 212, 0.15);
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.infra-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1.1em;
+}
+.infra-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.infra-card ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 8px;
+}
+
+.ai-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 25px;
+}
+.ai-box {
+  background: rgba(114, 237, 212, 0.02);
+  border: 1px solid rgba(114, 237, 212, 0.15);
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ai-box i {
+  font-size: 1.8em;
+  color: var(--primary-color);
+}
+.ai-box h4 {
+  color: var(--light-color);
+}
+
+.partnerships-section .p-sub {
+  margin-bottom: 25px;
+}
+.partners-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background: rgba(114, 237, 212, 0.02);
+  border: 1px solid rgba(114, 237, 212, 0.15);
+  padding: 25px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #d1d5db;
+  text-align: center;
+}

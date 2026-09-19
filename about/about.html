@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EraM Medical - About Us</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="about-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+</head>
+<body>
+    <!-- Desktop Header -->
+    <header class="desktop-header">
+        <div class="head">
+            <div class="header-logo">
+                <img src="Images/Logo.png" alt="Logo">
+                <h1>EMI</h1>
+            </div>
+
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="about/about.html">About Us</a>
+                <a href="services/services.html">Services</a>
+                <a href="contact/contact.html">Contact</a>
+            </nav>
+            <div class="header-btn">
+                <a href="#contact">Book Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Separate Responsive Header for Small Screens -->
+    <header class="mobile-header">
+        <div class="mobile-head">
+            <div class="header-logo">
+                <img src="Images/Logo.png" alt="Logo">
+                <h1>EMI</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="mobile-nav-drawer" id="mobileNav">
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#service">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-btn">
+                <a href="#contact">Book Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Mission Section -->
+        <section class="about-hero-section">
+            <div class="about-hero-text">
+                <h2>Our Mission: Illuminating the Invisible.</h2>
+                <p>At EraM Medical Imaging, our mission is to deliver uncompromising diagnostic clarity. We blend rigorous clinical expertise with advanced computational radiology to provide insights that drive critical healthcare decisions.</p>
+                <div class="mission-cards-row">
+                    <div class="m-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h4>Data Integrity</h4>
+                        <p>Ensuring artifact-free, high-fidelity imaging datasets.</p>
+                    </div>
+                    <div class="m-card">
+                        <i class="fa-solid fa-microchip"></i>
+                        <h4>Advanced Diagnostics</h4>
+                        <p>Utilizing AI-augmented interpretation protocols.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-hero-img">
+                <img src="Images/Ultrasound.jpeg" alt="Medical Technology">
+            </div>
+        </section>
+
+        <!-- Legacy Section -->
+        <section class="legacy-section">
+            <div class="legacy-text">
+                <h2>A Legacy of Diagnostic Excellence</h2>
+                <p>Founded in 1995, EraM Medical Imaging began with a single high-field MRI scanner and a commitment to pushing the boundaries of what could be seen. Over the decades, we have continuously invested in state-of-the-art technology and recruited top-tier subspecialized radiologists. Our journey from a local clinic to a regional leader in computational radiology reflects our unwavering dedication to precision, speed, and patient-centric care.</p>
+            </div>
+            <div class="legacy-stats">
+                <div class="stat-box">
+                    <h3>15+</h3>
+                    <p>YEARS EXPERIENCE</p>
+                </div>
+                <div class="stat-box">
+                    <h3>50k</h3>
+                    <p>SCANS ANNUALLY</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership in Radiology -->
+        <section class="leadership-section">
+            <h2>Leadership in Radiology</h2>
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <div class="leader-avatar"><i class="fa-solid fa-user"></i></div>
+                    <h4>Dr. Elena Rostova</h4>
+                    <span class="role">Chief Medical Officer</span>
+                    <p class="spec">Neuroradiology Specialist</p>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-avatar"><i class="fa-solid fa-user"></i></div>
+                    <h4>Dr. Marcus Chen</h4>
+                    <span class="role">Head of AI Integration</span>
+                    <p class="spec">Computational Diagnostics</p>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-avatar"><i class="fa-solid fa-user"></i></div>
+                    <h4>Sarah Jenkins, RT</h4>
+                    <span class="role">Lead Technologist</span>
+                    <p class="spec">Advanced Imaging Protocols</p>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-avatar"><i class="fa-solid fa-user"></i></div>
+                    <h4>David Torres</h4>
+                    <span class="role">Director of Operations</span>
+                    <p class="spec">Clinical Workflow</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technological Infrastructure -->
+        <section class="tech-infra-section">
+            <h2>Technological Infrastructure</h2>
+            <div class="infra-grid">
+                <div class="infra-card">
+                    <div class="infra-header">
+                        <span>MRI 3.0T Tesla</span>
+                        <span class="badge-active">ACTIVE</span>
+                    </div>
+                    <ul>
+                        <li><span>Resolution</span> <span>Sub-millimeter</span></li>
+                        <li><span>Scan Time</span> <span>-35%</span></li>
+                        <li><span>Modality</span> <span>Neuro / MSK</span></li>
+                    </ul>
+                </div>
+                <div class="infra-card">
+                    <div class="infra-header">
+                        <span>CT 256-Slice</span>
+                        <span class="badge-active">ACTIVE</span>
+                    </div>
+                    <ul>
+                        <li><span>Dose Reduction</span> <span>Up to 65%</span></li>
+                        <li><span>Coverage</span> <span>16cm per rotation</span></li>
+                        <li><span>Modality</span> <span>Cardiac / Trauma</span></li>
+                    </ul>
+                </div>
+                <div class="infra-card">
+                    <div class="infra-header">
+                        <span>3D Mammography</span>
+                        <span class="badge-active">ACTIVE</span>
+                    </div>
+                    <ul>
+                        <li><span>Detection Rate</span> <span>+30% Invasive</span></li>
+                        <li><span>Tomosynthesis</span> <span>High-Res</span></li>
+                        <li><span>Modality</span> <span>Oncology</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Integrity & AI Integration -->
+        <section class="ai-section">
+            <h2>Data Integrity & AI Integration</h2>
+            <p>We employ robust, HIPAA-compliant data architectures to ensure that every pixel of patient data remains secure and uncorrupted. Our proprietary AI overlay assists radiologists by pre-screening scans for subtle anomalies, reducing false negatives, and accelerating turnaround times for critical findings.</p>
+            <div class="ai-grid">
+                <div class="ai-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <h4>Encrypted Pipelines</h4>
+                    <p>End-to-end encryption for all image transmissions and archiving systems.</p>
+                </div>
+                <div class="ai-box">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h4>Machine Learning Triage</h4>
+                    <p>Algorithms prioritize urgent cases, instantly flagging acute conditions for immediate review.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Health Impact -->
+        <section class="community-section">
+            <h2>Community Health Impact</h2>
+            <p>EraM Medical is deeply embedded in the local healthcare ecosystem. We run a bold-ed screening program for underserved populations and regularly host educational seminars on the importance of early detection. By democratizing access to high-end diagnostic tools, we strive to elevate the baseline of community health.</p>
+        </section>
+
+        <!-- Clinical Partnerships -->
+        <section class="partnerships-section">
+            <h2>Clinical Partnerships</h2>
+            <p class="p-sub">Collaboration is at the core of our practice. We serve as the primary diagnostic arm for over 50 regional specialty clinics, oncology centers, and trauma units. Our integrated digital portal allows referring physicians instant, secure access to scan results, fostering a seamless, multidisciplinary approach to patient care.</p>
+            <div class="partners-row">
+                <span>University Research Hospital</span>
+                <span>Regional Oncology Network</span>
+                <span>Apex Orthopedic Group</span>
+                <span>Metro Trauma Center</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-col">
+            <h3>EraM Medical</h3>
+            <p>Precision Diagnostics.</p>
+        </div>
+        <div class="footer-col">
+            <h3>SERVICES</h3>
+            <ul>
+                <li><a href="services.html">MRI Services</a></li>
+                <li><a href="services.html">CT Scans</a></li>
+                <li><a href="services.html">X-Ray</a></li>
+                <li><a href="services.html">Ultrasound</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>LEGAL</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-col full-width-copyright">
+            <p>&copy; 2026 EraM Medical Imaging. Precision Diagnostics.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

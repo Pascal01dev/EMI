@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EraM Medical - Diagnostic Services</title>
+    <!-- Separate Dedicated Stylesheets -->
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="services-responsive.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+</head>
+<body>
+    <!-- Desktop Header -->
+    <header class="desktop-header">
+        <div class="head">
+            <div class="header-logo">
+                <img src="Images/Logo.png" alt="Logo">
+                <h1>EMI</h1>
+            </div>
+
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="about/about.html">About Us</a>
+                <a href="services/services.html">Services</a>
+                <a href="contact/contact.html">Contact</a>
+            </nav>
+            <div class="header-btn">
+                <a href="#contact">Book Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Separate Responsive Header for Small Screens -->
+    <header class="mobile-header">
+        <div class="mobile-head">
+            <div class="header-logo">
+                <img src="Images/Logo.png" alt="Logo">
+                <h1>EMI</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="mobile-nav-drawer" id="mobileNav">
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#service">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-btn">
+                <a href="#contact">Book Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header-section">
+            <div class="section-title-wrap">
+                <h2>Diagnostic Services</h2>
+                <p>Advanced imaging solutions providing crystalline clarity for precision diagnostics. Our state-of-the-art modalities are designed for both rigorous clinical accuracy and optimal patient comfort. Explore our comprehensive suite of diagnostic services below.</p>
+                <a href="#modalities" class="sub-badge"><i class="fa-solid fa-sliders"></i> View Modalities</a>
+            </div>
+
+            <!-- Modalities Grid -->
+            <div class="services-detailed-grid" id="modalities">
+                <div class="service-card-large span-2">
+                    <div class="card-top-row">
+                        <i class="fa-solid fa-atom"></i>
+                        <span class="badge-blue">HIGH FIELD</span>
+                    </div>
+                    <h3>MRI - High Field Imaging</h3>
+                    <p>High resolution, multi-planar imaging utilizing powerful magnetic fields. Ideal for detailed neurological, musculoskeletal, or soft tissue evaluations without ionizing radiation.</p>
+                    <div class="card-accordion">
+                        <span class="acc-title"><i class="fa-solid fa-circle-info"></i> Preparation</span>
+                        <p class="acc-content">Remove all metallic objects. Fasting may be required depending on the use of contrast agents.</p>
+                    </div>
+                    <a href="contact.html" class="text-link">Learn More &rarr;</a>
+                </div>
+
+                <div class="service-card-large">
+                    <div class="card-top-row">
+                        <i class="fa-solid fa-circle-dot"></i>
+                        <span class="badge-blue">FAST-SCAN</span>
+                    </div>
+                    <h3>CT Scans - Fast Acquisition</h3>
+                    <p>Rapid, cross-sectional X-ray imaging providing detailed 3D views of internal structures, crucial for urgent diagnostics.</p>
+                    <div class="card-accordion">
+                        <span class="acc-title"><i class="fa-solid fa-circle-info"></i> Preparation</span>
+                        <p class="acc-content">Prep: May require fasting if contrast is used. Arrive 15 mins early.</p>
+                    </div>
+                    <a href="contact.html" class="text-link">Learn More &rarr;</a>
+                </div>
+
+                <div class="service-card-large">
+                    <div class="card-top-row">
+                        <i class="fa-solid fa-wave-square"></i>
+                    </div>
+                    <h3>Ultrasound - Real-time Diagnostics</h3>
+                    <p>Real-time, non-invasive imaging using high-frequency sound waves. Safe and highly effective for abdominal and obstetric diagnostics.</p>
+                    <div class="card-accordion">
+                        <span class="acc-title"><i class="fa-solid fa-circle-info"></i> Preparation</span>
+                        <p class="acc-content">Prep: Varies by exam. May require full bladder or fasting.</p>
+                    </div>
+                    <a href="contact.html" class="text-link">Learn More &rarr;</a>
+                </div>
+
+                <div class="service-card-large">
+                    <div class="card-top-row">
+                        <i class="fa-solid fa-user-xray"></i>
+                    </div>
+                    <h3>Digital X-Ray - Low Dose</h3>
+                    <p>Standard radiologic imaging enhanced by digital processing for finer cellular bone and chest assessment with minimal radiation exposure.</p>
+                    <div class="card-accordion">
+                        <span class="acc-title"><i class="fa-solid fa-circle-info"></i> Preparation</span>
+                        <p class="acc-content">Prep: No special preparation. Wear loose, comfortable clothing.</p>
+                    </div>
+                    <a href="contact.html" class="text-link">Learn More &rarr;</a>
+                </div>
+
+                <div class="service-card-large">
+                    <div class="card-top-row">
+                        <i class="fa-solid fa-venus"></i>
+                        <span class="badge-blue">3D TOMO</span>
+                    </div>
+                    <h3>Mammography - Advanced Screening</h3>
+                    <p>Advanced 3D tomosynthesis for early detection and comprehensive breast health screening, offering superior clarity and reduced false positives.</p>
+                    <div class="card-accordion">
+                        <span class="acc-title"><i class="fa-solid fa-circle-info"></i> Preparation</span>
+                        <p class="acc-content">Prep: Do not wear deodorant or powder on the day of the exam.</p>
+                    </div>
+                    <a href="contact.html" class="text-link">Learn More &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialized Imaging Protocols -->
+        <section class="specialized-section">
+            <h2>Specialized Imaging Protocols</h2>
+            <div class="protocols-grid">
+                <div class="protocol-card">
+                    <i class="fa-solid fa-brain"></i>
+                    <h3>Neurology</h3>
+                    <p>Advanced neuro-imaging techniques tailored for brain and spine assessments, providing intricate details of the central nervous system.</p>
+                </div>
+                <div class="protocol-card">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h3>Cardiology</h3>
+                    <p>Specialized cardiac imaging to evaluate heart function, structure, and vascular health with unparalleled precision and minimal invasiveness.</p>
+                </div>
+                <div class="protocol-card">
+                    <i class="fa-solid fa-microscope"></i>
+                    <h3>Oncology</h3>
+                    <p>Comprehensive oncological imaging designed for early detection, tumor staging, and continuous treatment monitoring.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guides & Billing Section -->
+        <section class="guides-billing-section">
+            <div class="guide-box">
+                <h3>Patient Preparation Guides</h3>
+                <p>Proper preparation is key to ensuring accurate results. Review our detailed instructions prior to your appointment to facilitate a seamless imaging experience.</p>
+                <ul class="guide-list">
+                    <li><i class="fa-solid fa-check"></i> General Imaging Guidelines</li>
+                    <li><i class="fa-solid fa-check"></i> Contrast Study Preparations</li>
+                    <li><i class="fa-solid fa-check"></i> What to Expect on Arrival</li>
+                </ul>
+            </div>
+            <div class="guide-box">
+                <h3>Insurance & Billing Information</h3>
+                <p>We work with a wide network of major insurance providers. Our billing specialists are dedicated to helping you understand your coverage and out-of-pocket responsibilities.</p>
+                <div class="accepted-providers">
+                    <span>ACCEPTED PROVIDERS</span>
+                    <p>Medicare, Medicaid, BlueCross BlueShield, Aetna, Cigna, UnitedHealthcare, and more.</p>
+                </div>
+                <a href="#" class="text-link"><i class="fa-solid fa-file-shield"></i> View Full Billing Policy</a>
+            </div>
+        </section>
+
+        <!-- Referral Process -->
+        <section class="referral-section">
+            <div class="referral-content">
+                <h2>Referral Process for Physicians</h2>
+                <p>Partnering with healthcare providers to deliver rapid, reliable diagnostic reporting. Utilize our streamlined electronic referral portal for efficient patient scheduling and secure access to imaging results.</p>
+            </div>
+            <div class="referral-actions">
+                <a href="contact.html" class="pri-btn">Provider Portal</a>
+                <a href="#" class="sec-btn"><i class="fa-solid fa-download"></i> Download Forms</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-col">
+            <div class="header-logo">
+                <img src="Images/Logo.png" alt="Logo">
+                <h1>EMI</h1>
+            </div>
+            <p>Precision in Every Image, delivering rapid and reliable diagnostics.</p>
+            <p class="copyright">&copy; 2026 EraM Medical Imaging. All rights reserved.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#service">Maternal & Fetal Care</a></li>
+                <li><a href="#service">Abdomen & Pelvis</a></li>
+                <li><a href="#service">Musculoskeletal</a></li>
+                <li><a href="#service">Gynaecological Scans</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Kampala, Uganda</p>
+            <p><i class="fa-solid fa-phone"></i> +256 000 000 000</p>
+            <p><i class="fa-solid fa-envelope"></i> info@eramimaging.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
