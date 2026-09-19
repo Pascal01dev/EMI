@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EraM Medical - Contact & Connectivity</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="contact-reponsive.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../responsive.css">
+</head>
+<body>
+    <!-- Desktop Header -->
+    <header class="desktop-header">
+        <div class="head">
+            <div class="header-logo">
+                <img src="Images/Logo.png" alt="Logo">
+                <h1>EMI</h1>
+            </div>
+
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="about/about.html">About Us</a>
+                <a href="services/services.html">Services</a>
+                <a href="#index.html">Contact</a>
+            </nav>
+            <div class="header-btn">
+                <a href="#contact">Book Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Separate Responsive Header for Small Screens -->
+    <header class="mobile-header">
+        <div class="mobile-head">
+            <div class="header-logo">
+                <img src="Images/Logo.png" alt="Logo">
+                <h1>EMI</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="mobile-nav-drawer" id="mobileNav">
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#service">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-btn">
+                <a href="#contact">Book Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact class="contact-top-banner">
+            <h2>Secure Connectivity</h2>
+            <p>Establish a secure diagnostic channel with our facility. Request appointments, inquire about imaging modalities, or access patient support protocols.</p>
+        </section>
+
+        <!-- Main Form & Coordinates Grid -->
+        <section class="contact-grid-section">
+            <div class="request-diagnostics-box">
+                <h3><i class="fa-solid fa-shield"></i> Request Diagnostics</h3>
+                <form action="#">
+                    <div class="form-row-dual">
+                        <div class="f-group">
+                            <label>PATIENT NAME ID</label>
+                            <input type="text" placeholder="Full Legal Name" required>
+                        </div>
+                        <div class="f-group">
+                            <label>CONTACT VECTOR</label>
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    <div class="form-row-dual">
+                        <div class="f-group">
+                            <label>TELECOM REG</label>
+                            <input type="text" placeholder="Phone Number" required>
+                        </div>
+                        <div class="f-group">
+                            <label>REQUESTED MODALITY</label>
+                            <select required>
+                                <option value="">Select Imaging Type</option>
+                                <option value="mri">MRI Services</option>
+                                <option value="ct">CT Scans</option>
+                                <option value="xray">X-Ray</option>
+                                <option value="us">Ultrasound</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="f-group full">
+                        <label>CLINICAL NOTES / REASON FOR VISIT</label>
+                        <textarea placeholder="Provide brief context or related symptoms..." required></textarea>
+                    </div>
+                    <div class="form-footer-note">
+                        <span><i class="fa-solid fa-lock"></i> HIPAA Compliant Transfer</span>
+                        <button type="submit" class="pri-btn">TRANSMIT REQUEST &rarr;</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Coordinates & Map -->
+            <div class="coordinates-column">
+                <div class="coord-card">
+                    <h3><i class="fa-solid fa-location-crosshairs"></i> Facility Coordinates</h3>
+                    <div class="coord-item">
+                        <span class="c-label">PRIMARY CAMPUS</span>
+                        <span class="c-val">464 Vector Way, Sector 7<br>Neo-Seattle, WA 95199</span>
+                    </div>
+                    <div class="coord-item">
+                        <span class="c-label">VOICE PROTOCOL</span>
+                        <span class="c-val">1-800-ERA-SCAN<br><small>24/7 Emergency Radiology</small></span>
+                    </div>
+                    <div class="coord-item">
+                        <span class="c-label">DATA INTAKE</span>
+                        <span class="c-val">referrals@eram-imaging.med</span>
+                    </div>
+                </div>
+                <div class="map-preview-card">
+                    <div class="map-tag"><i class="fa-solid fa-map-location-dot"></i> LIVE NAV LINK</div>
+                    <img src="Images/Hero-bg1.jpeg" alt="Facility Map Location">
+                </div>
+            </div>
+        </section>
+
+        <!-- Extra Info Rows -->
+        <section class="extra-info-grid">
+            <div class="info-card-dark">
+                <h3><i class="fa-solid fa-triangle-exclamation"></i> After-Hours Support & Emergency Radiology</h3>
+                <p>Our specialized emergency radiology unit operates 24/7 to provide immediate diagnostic analysis for critical cases.</p>
+                <div class="emergency-badge-box">
+                    <span>CRITICAL HOTLINE</span>
+                    <h4>1-800-ERA-CRIT</h4>
+                </div>
+            </div>
+            <div class="info-card-dark">
+                <h3><i class="fa-solid fa-square-parking"></i> Directions & Parking</h3>
+                <p>Dedicated patient parking is available in Sector 7 Garage, directly adjacent to the primary campus entrance. Validations provided at the main intake desk.</p>
+                <ul class="direction-list">
+                    <li><i class="fa-solid fa-route"></i> From I-5 North: Take Exit 167, follow signs to Sector 7.</li>
+                    <li><i class="fa-solid fa-train-subway"></i> Transit Hub: Neo-Seattle Light Rail, Station Alpha (2 blocks away).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FAQ Protocol Section -->
+        <section class="faq-section">
+            <h2>Patient Data Protocols (FAQ)</h2>
+            <div class="faq-accordion-box">
+                <div class="faq-item">
+                    <h4>How should I prepare for an MRI scan? <i class="fa-solid fa-chevron-down"></i></h4>
+                    <p>Preparation varies by scan type, but generally involves removing all metallic objects, wearing comfortable clothing without zippers or snaps, and potentially fasting if contrast dye is to be administered. A detailed prep sheet will be transmitted to you upon appointment confirmation.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How long will it take to receive my diagnostic report? <i class="fa-solid fa-chevron-down"></i></h4>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you accept external physician referrals? <i class="fa-solid fa-chevron-down"></i></h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback & Patient Satisfaction -->
+        <section class="feedback-section">
+            <div class="feedback-card-inner">
+                <h3><i class="fa-solid fa-comments"></i> Feedback & Patient Satisfaction</h3>
+                <p>We constantly optimize our protocols based on your experience. Share your diagnostic journey with our quality assurance team.</p>
+                <a href="#" class="sec-btn">SUBMIT FEEDBACK &rarr;</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-col">
+            <h3>EraM Medical</h3>
+            <p>Precision Diagnostics.</p>
+        </div>
+        <div class="footer-col">
+            <h3>SERVICES</h3>
+            <ul>
+                <li><a href="services.html">MRI Services</a></li>
+                <li><a href="services.html">CT Scans</a></li>
+                <li><a href="services.html">X-Ray</a></li>
+                <li><a href="services.html">Ultrasound</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>LEGAL</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-col full-width-copyright">
+            <p>&copy; 2026 EraM Medical Imaging. Precision Diagnostics.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

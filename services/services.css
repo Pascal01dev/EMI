@@ -1,0 +1,242 @@
+:root {
+  --primary-color: #72edd4;
+  --dark-color: #050917;
+  --darker-color: #030614;
+  --light-color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  overflow-x: hidden;
+}
+
+main {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+section {
+  width: 90%;
+  margin: 40px 0;
+}
+h2 {
+  font-size: 2.2em;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+p {
+  color: #9ca3af;
+  line-height: 1.6;
+}
+.text-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95em;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.badge-blue {
+  background: rgba(114, 237, 212, 0.1);
+  color: var(--primary-color);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Services Layout */
+.page-header-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section-title-wrap {
+  max-width: 900px;
+}
+.sub-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(114, 237, 212, 0.05);
+  border: 1px solid rgba(114, 237, 212, 0.2);
+  padding: 8px 16px;
+  border-radius: 30px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.services-detailed-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.service-card-large {
+  background: rgba(114, 237, 212, 0.02);
+  border: 1px solid rgba(114, 237, 212, 0.15);
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.service-card-large.span-2 {
+  grid-column: span 2;
+}
+.card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-top-row i {
+  font-size: 1.8em;
+  color: var(--primary-color);
+}
+.service-card-large h3 {
+  color: var(--light-color);
+  font-size: 1.3em;
+}
+
+.card-accordion {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(114, 237, 212, 0.1);
+  margin: 10px 0;
+}
+.acc-title {
+  color: var(--primary-color);
+  font-size: 0.9em;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+.acc-content {
+  font-size: 0.85em;
+  color: #9ca3af;
+}
+
+.protocols-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.protocol-card {
+  background: rgba(114, 237, 212, 0.02);
+  border: 1px solid rgba(114, 237, 212, 0.15);
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.protocol-card i {
+  font-size: 1.8em;
+  color: var(--primary-color);
+}
+.protocol-card h3 {
+  color: var(--light-color);
+}
+
+.guides-billing-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.guide-box {
+  background: rgba(114, 237, 212, 0.02);
+  border: 1px solid rgba(114, 237, 212, 0.15);
+  border-radius: 12px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.guide-box h3 {
+  color: var(--primary-color);
+  font-size: 1.4em;
+}
+.guide-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.guide-list li {
+  color: var(--light-color);
+  font-size: 0.95em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.guide-list li i {
+  color: var(--primary-color);
+}
+
+.accepted-providers {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(114, 237, 212, 0.1);
+}
+.accepted-providers span {
+  font-size: 0.75em;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.referral-section {
+  background: rgba(114, 237, 212, 0.02);
+  border: 1px solid rgba(114, 237, 212, 0.2);
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.referral-content {
+  max-width: 60%;
+}
+.referral-actions {
+  display: flex;
+  gap: 15px;
+}
+.pri-btn,
+.sec-btn {
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95em;
+}
+.pri-btn {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+}
+.sec-btn {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
