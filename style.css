@@ -611,3 +611,116 @@ footer{
     color: var(--primary-color);
     margin-right: 8px;
 }
+
+/* Theme toggle */
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 12px;
+    border: 1px solid rgba(114, 237, 212, 0.35);
+    border-radius: 50px;
+    background: transparent;
+    color: var(--primary-color);
+    font: inherit;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.desktop-header .theme-toggle {
+    margin-left: 18px;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(114, 237, 212, 0.12);
+}
+
+[data-theme="light"] {
+    --primary-color: #087f70;
+    --dark-color: #f5faf9;
+    --darker-color: #e7f1ef;
+    --light-color: #173331;
+}
+
+[data-theme="light"] p,
+[data-theme="light"] .head nav a,
+[data-theme="light"] .footer-col,
+[data-theme="light"] .footer-col ul li a,
+[data-theme="light"] .form-footer-note span {
+    color: #526866;
+}
+
+[data-theme="light"] .header-btn a,
+[data-theme="light"] .mobile-nav-drawer .header-btn a {
+    color: #ffffff;
+}
+
+[data-theme="light"] .m-card,
+[data-theme="light"] .legacy-section,
+[data-theme="light"] .leader-card,
+[data-theme="light"] .infra-card,
+[data-theme="light"] .ai-box,
+[data-theme="light"] .partners-row,
+[data-theme="light"] .service-card-large,
+[data-theme="light"] .protocol-card,
+[data-theme="light"] .guide-box,
+[data-theme="light"] .referral-section,
+[data-theme="light"] .request-diagnostics-box,
+[data-theme="light"] .coord-card,
+[data-theme="light"] .info-card-dark,
+[data-theme="light"] .faq-item,
+[data-theme="light"] .feedback-section {
+    background-color: rgba(255, 255, 255, 0.82);
+    border-color: rgba(8, 127, 112, 0.2);
+}
+
+[data-theme="light"] .card-accordion,
+[data-theme="light"] .accepted-providers,
+[data-theme="light"] .f-group input,
+[data-theme="light"] .f-group select,
+[data-theme="light"] .f-group textarea {
+    background-color: #edf6f4;
+    color: var(--light-color);
+    border-color: rgba(8, 127, 112, 0.2);
+}
+
+[data-theme="light"] .f-group select option {
+    background-color: #edf6f4;
+    color: var(--light-color);
+}
+
+[data-theme="light"] .acc-content,
+[data-theme="light"] .direction-list li,
+[data-theme="light"] .partners-row {
+    color: #526866;
+}
+
+[data-theme="light"] footer {
+    background-color: var(--darker-color);
+    border-color: rgba(8, 127, 112, 0.2);
+}
+
+[data-theme="light"] .map-tag {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 992px) {
+    .theme-toggle {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        z-index: 1100;
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        padding: 0;
+        border-radius: 50%;
+        background-color: var(--dark-color);
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .theme-toggle span {
+        display: none;
+    }
+}
